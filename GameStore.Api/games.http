@@ -1,26 +1,26 @@
 GET http://localhost:5081/games
 
 ###
-GET http://localhost:5081/games/1
+GET http://localhost:5081/games/3
 
 ###
 POST http://localhost:5081/games
 Content-Type: application/json
 
 {
-  "name": "Elden Ring",
-  "genre": "Action RPG",
-  "price": 59.99,
-  "releaseDate": "2022-02-25"
+  "name": "GTA 4",
+  "genreId": 4,
+  "price": 19.99,
+  "releaseDate": "2006-02-25"
 }
 
 ###
-PUT http://localhost:5081/games/7
+PUT http://localhost:5081/games/2
 Content-Type: application/json
 
 {
   "name": "Elden Ring plus",
-  "genre": "Action RPG",
+  "genreId": 1,
   "price": 9.99,
   "releaseDate": "2022-02-25"
 }
